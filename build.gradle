@@ -1,0 +1,28 @@
+group 'com.demo.payslip'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+sourceCompatibility = 1.8
+
+
+//create a single Jar with all dependencies
+task buildJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'employee-monthly-payslip-generator',
+                'Implementation-Version': version,
+                'Main-Class': 'PaySlipCalculator'
+    }
+    baseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.easymock:easymock:3.1'
+}
