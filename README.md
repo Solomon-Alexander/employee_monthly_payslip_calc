@@ -1,4 +1,5 @@
-#Employee Monthly Payslip Calculator
+Employee Monthly Payslip Calculator
+-------------------------------
 
 Below are the employee's details: 
 
@@ -37,7 +38,8 @@ $80,001 - $180,000 $17,547 plus 37c for each $1 over $80,000
 
 $180,001 and over $54,547 plus 45c for each $1 over $180,000
 
-#Sample Data (Copied from the problem)#
+Sample Data (Copied from the problem)
+-----------------------------
 
 Employee annual salary is 60,050, super rate is 9%, how much will this employee be paid for the month of March ?
 
