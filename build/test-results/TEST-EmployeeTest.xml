@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-03T12:07:17" hostname="DESKTOP-54KQDQ8" time="0.001">
+<testsuite name="EmployeeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-03T12:24:51" hostname="DESKTOP-54KQDQ8" time="0.0">
   <properties/>
-  <testcase name="testIfAnnualSalaryIsInvalid" classname="EmployeeTest" time="0.001"/>
+  <testcase name="testIfAnnualSalaryIsInvalid" classname="EmployeeTest" time="0.0"/>
   <testcase name="testIfEmployeeInstanceIsCreated" classname="EmployeeTest" time="0.0"/>
   <testcase name="testSuperRateIsInvalid" classname="EmployeeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
