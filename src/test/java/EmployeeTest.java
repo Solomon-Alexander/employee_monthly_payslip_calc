@@ -1,6 +1,7 @@
 import junit.framework.TestCase;
 import org.junit.Before;
-
+import com.demo.empmonthlypayslip.exception.PaySlipCalculatorException;
+import com.demo.empmonthlypayslip.model.Employee;
 /**
  * This class is responsible for unit testing the Employee model.
  * 

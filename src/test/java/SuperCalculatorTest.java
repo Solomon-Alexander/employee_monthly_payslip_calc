@@ -1,6 +1,6 @@
 import junit.framework.TestCase;
 import org.junit.Before;
-
+import com.demo.empmonthlypayslip.util.SuperCalculator;
 /**
  * This class is responsible for unit testing the SuperCalculator implementation.
  * 

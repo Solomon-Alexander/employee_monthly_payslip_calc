@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Implementation-Title: employee-monthly-payslip-generator
 Implementation-Version: 1.0-SNAPSHOT
-Main-Class: PaySlipCalculator
+Main-Class: com.demo.empmonthlypayslip.util.EmpMonPaySlipCalculator
 

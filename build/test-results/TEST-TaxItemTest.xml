@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaxItemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-03T12:24:51" hostname="DESKTOP-54KQDQ8" time="0.0">
+<testsuite name="TaxItemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-03T13:24:25" hostname="DESKTOP-54KQDQ8" time="0.0">
   <properties/>
   <testcase name="testDerivedTaxItem" classname="TaxItemTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

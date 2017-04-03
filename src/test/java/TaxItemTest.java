@@ -1,6 +1,6 @@
 import junit.framework.TestCase;
 import org.junit.Before;
-
+import com.demo.empmonthlypayslip.model.TaxItem;
 /**
  * This class is responsible for unit testing the TaxItem model.
  * 
