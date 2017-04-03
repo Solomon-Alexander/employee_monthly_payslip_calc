@@ -1,8 +1,8 @@
-import junit.framework.TestCase;
-import org.easymock.EasyMock;
-import org.junit.Before;
 import java.util.ArrayList;
 import java.util.List;
+import org.junit.Before;
+import junit.framework.TestCase;
+import org.mockito.Mockito;
 
 /**
  * This class is responsible for unit testing the CSVFileWriter implementation.
@@ -20,10 +20,10 @@ public class CSVFileWriterTest extends TestCase{
 	}
 	
 	public void testWriteDataToFile(){
-		Employee employeeOne = EasyMock.createNiceMock(Employee.class);
-		EasyMock.replay(employeeOne);
+		Employee employeeOne = Mockito.mock(Employee.class);
 		List<Employee> employees = new ArrayList<Employee>();
 		employees.add(employeeOne);
-		writer.writeToFile("output.txt",employees);
+		boolean result = writer.writeToFile("output.txt",employees);
+		assertEquals(true,result);
 	}
 }

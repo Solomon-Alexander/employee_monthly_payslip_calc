@@ -6,6 +6,7 @@ import java.util.List;
 import java.io.BufferedReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.io.FileNotFoundException;
 
 /**
  * This class is responsible for reading and processing a CSV
@@ -40,8 +41,9 @@ public class CSVFileReader {
 				employee.setSuperRate(fromPercentageStringToDouble(employeeDetails.get(3)));
 				employees.add(employee);
 			});
-		}catch(Exception ex){
-			throw new PaySlipCalculatorException("Unable to read from file");
+		}
+		catch(Exception ex){
+			throw new PaySlipCalculatorException("File does not exists or Unable to read from file");
 		}
 		return employees;
 	}

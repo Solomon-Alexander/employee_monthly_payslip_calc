@@ -21,7 +21,7 @@ public class CSVFileReaderTest extends TestCase {
 		try{
 			reader.readFrom("fake.txt");
 		}catch(PaySlipCalculatorException ex){
-			assertEquals("Unable to read from file",ex.getMessage());
+			assertEquals("File does not exists or Unable to read from file",ex.getMessage());
 		}
 	}
 
@@ -42,7 +42,7 @@ public class CSVFileReaderTest extends TestCase {
 		}
 	}
 	
-	public void testReadFromValidFile(){
+	public void testReadFromValidInputFile(){
 		try{
 			List<Employee> employees = reader.readFrom("input.txt");
 			assertEquals(2, employees.size());
@@ -62,7 +62,7 @@ public class CSVFileReaderTest extends TestCase {
 			assertEquals(0.1,employeeTwo.getSuperRate());
 			
 		}catch(Exception ex){
-			//do nothing
 		}
 	}
+	
 }

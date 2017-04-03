@@ -1,8 +1,15 @@
-#Payslip Calculator
+#Employee Monthly Payslip Calculator
 
-When I input the employee's details: first name, last name, annual salary(positive integer) and super rate (0% - 50% inclusive), payment start date, the program should generate payslip information with name, pay period, gross income, income tax, net income and super.
+When we input the employee's details: 
+first name, 
+last name, 
+annual salary(positive integer) 
+super rate (0% - 50% inclusive), 
+payment start date
 
-The calculation details will be the following:
+The program should generate payslip information with name, pay period, gross income, income tax, net income and super.
+
+Below are the calculation rules:
 
 pay period = per calendar month
 gross income = annual salary / 12 months
@@ -35,24 +42,31 @@ Here is the csv input and output format we provide. (But feel free to use any fo
 
 Input (first name, last name, annual salary, super rate (%), payment start date): 
 
-David,Rudd,60050,9%,01 March – 31 March
-Ryan,Chen,120000,10%,01 March – 31 March
+David,Rudd,60050,9%,01 March - 31 March
+Ryan,Chen,120000,10%,01 March - 31 March
 
 Output (name, pay period, gross income, income tax, net income, super):
 
-David Rudd,01 March – 31 March,5004,922,4082,450
-Ryan Chen,01 March – 31 March,10000,2696,7304,1000
+David Rudd,01 March - 31 March,5004,922,4082,450
+Ryan Chen,01 March - 31 March,10000,2696,7304,1000
 
-As part of your solution:
+As part of the solution:
 
 List any assumptions that you have made in order to solve this problem.
 Provide instruction on how to run the application
 Provide a test harness to validate your solution.
 
+Softwares required for running this application
+-------------------------------
+Java 8
+Gradle 2.11
+
 Build/Create JAR instructions
 -------------------------------
 
 To create new build from source:
+
+gradle clean
 
 gradle build
 

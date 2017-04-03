@@ -17,7 +17,7 @@ public class PaySlipCalculator {
 	   * @return void.
 	   * @throws PaySlipCalculatorException
 	   */
-	public void execute(String inputFile, String outputFile){
+	public boolean execute(String inputFile, String outputFile){
 		 CSVFileReader reader = new CSVFileReader();
 		 List<Employee> employees = reader.readFrom(inputFile);
 		
@@ -27,7 +27,7 @@ public class PaySlipCalculator {
 		 });
 		
 		CSVFileWriter writer = new CSVFileWriter();
-		writer.writeToFile(outputFile,employees);
+		return writer.writeToFile(outputFile,employees);
 	}
 	
 	/**
@@ -44,7 +44,7 @@ public class PaySlipCalculator {
 			System.out.println("Command:java -jar employee_monthly_payslip_calc-1.0-SNAPSHOT.jar <input file> <output file>");
 		}
 		PaySlipCalculator paySlipCalculator = new PaySlipCalculator();
-		paySlipCalculator.execute(args[0],args[1]);
+		if(paySlipCalculator.execute(args[0],args[1]))
 		System.out.println("Employee Monthly Salary Slip Details are calculated as per the provided input data and written into output.txt file. Please check.");
 	}
 	

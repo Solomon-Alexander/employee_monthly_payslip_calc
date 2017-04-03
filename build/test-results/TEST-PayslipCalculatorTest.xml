@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PayslipCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-02T14:56:27" hostname="DESKTOP-54KQDQ8" time="0.011">
+<testsuite name="PayslipCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-03T12:07:17" hostname="DESKTOP-54KQDQ8" time="0.007">
   <properties/>
-  <testcase name="testExecute" classname="PayslipCalculatorTest" time="0.011"/>
+  <testcase name="testExecute" classname="PayslipCalculatorTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CSVFileWriterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-02T14:56:27" hostname="DESKTOP-54KQDQ8" time="0.112">
+<testsuite name="CSVFileWriterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-03T12:07:17" hostname="DESKTOP-54KQDQ8" time="0.148">
   <properties/>
-  <testcase name="testWriteDataToFile" classname="CSVFileWriterTest" time="0.112"/>
+  <testcase name="testWriteDataToFile" classname="CSVFileWriterTest" time="0.148"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
